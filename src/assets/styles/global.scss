@@ -1,0 +1,76 @@
+@import "./button.scss";
+@import "./mixin.scss";
+
+:root {
+  --display-style: block;
+}
+
+html,
+body {
+  font-size: 13px;
+  @include tablet {
+    font-size: 15px;
+  }
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+// Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  height: 100vh;
+}
+
+a{
+  color: unset;
+}
+
+.cl-pink {
+  color: $color-pink;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Input style
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+input {
+  font-size: 1rem;
+  min-height: 36px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  border-radius: 3px;
+}

@@ -1,0 +1,43 @@
+@import "assets/styles//variable.scss";
+@import "assets/styles/mixin.scss";
+
+.ToDo__header {
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: $color-white;
+  background-color: $color-blue;
+  @include mobile {
+    font-size: 1.5rem;
+  }
+}
+
+.ToDo__container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  max-width: 95vw;
+  min-height: 50vh;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  margin: 5rem auto;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.09), 1px 1px 1px rgba(0, 0, 0, 0.05);
+  @include mobile {
+    min-height: 60vh;
+    padding: 1rem;
+  }
+}
+
+.Todo__creation {
+  display: flex;
+}
+
+.Todo__input {
+  height: 3.5rem;
+  flex: 1 1;
+  color: $color-p-dark;
+  background: #f2f2f2;
+}
